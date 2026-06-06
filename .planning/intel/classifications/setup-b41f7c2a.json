@@ -1,0 +1,28 @@
+{
+  "source_path": "/Users/aldemirkonuk/Documents/Claude/Projects/Portfolio/Talent Between the Lines/read_the_floor/SETUP.md",
+  "type": "DOC",
+  "confidence": "high",
+  "manifest_override": true,
+  "title": "SETUP — full step by step",
+  "summary": "Step-by-step setup guide for running the Read the Floor Matchup Engine locally (Track A) and the Skalski video pipeline on Colab GPU (Track B).",
+  "scope": [
+    "Matchup Engine",
+    "SportVU tracking data",
+    "local Python environment",
+    "Colab GPU pipeline",
+    "Skalski vision pipeline",
+    "RF-DETR / SAM2 / Roboflow models",
+    "run_sportvu.py",
+    "tracking table and GIF render"
+  ],
+  "cross_refs": [
+    "read_the_floor/colab_read_the_floor.ipynb",
+    "requirements-local.txt",
+    "../data/tracking/11.07.2015.CHA.at.SAS.7z",
+    "data/tracking/MANIFEST.txt",
+    "Talent Between the Lines/data/tracking/"
+  ],
+  "locked": false,
+  "precedence": 4,
+  "notes": ""
+}

@@ -1,0 +1,13 @@
+{
+  "source_path": "/Users/aldemirkonuk/Documents/Claude/Projects/Portfolio/Talent Between the Lines/read_the_floor/VALIDATION.md",
+  "type": "DOC",
+  "confidence": "high",
+  "manifest_override": true,
+  "title": "Validation — Matchup Engine",
+  "summary": "Validation results and robustness fixes for the matchup-assignment engine and Beaten Index metric on basketball tracking data.",
+  "scope": ["matchup engine", "Beaten Index metric", "Hungarian assignment", "possession/hoop inference", "contain_rate", "SportVU adapter", "Skalski adapter", "orientation-aware render"],
+  "cross_refs": [],
+  "locked": false,
+  "precedence": 3,
+  "notes": ""
+}

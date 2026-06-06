@@ -1,0 +1,16 @@
+docs:
+  - path: READ_THE_FLOOR.md
+    type: SPEC
+    precedence: 0
+  - path: BODY_AND_ANGLES.md
+    type: SPEC
+    precedence: 1
+  - path: STATE.md
+    type: DOC
+    precedence: 2
+  - path: read_the_floor/VALIDATION.md
+    type: DOC
+    precedence: 3
+  - path: read_the_floor/SETUP.md
+    type: DOC
+    precedence: 4

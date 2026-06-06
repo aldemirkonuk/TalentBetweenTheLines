@@ -1,0 +1,29 @@
+{
+  "source_path": "/Users/aldemirkonuk/Documents/Claude/Projects/Portfolio/Talent Between the Lines/BODY_AND_ANGLES.md",
+  "type": "SPEC",
+  "confidence": "high",
+  "manifest_override": true,
+  "title": "Body & Angles — the biomechanics edition",
+  "summary": "Technical extension of Read the Floor adding pose-derived body angles and combine-joined anthropometrics to drive scoring, finishing, passing, and defense metrics.",
+  "scope": [
+    "pose estimation (RTMPose / COCO-WholeBody)",
+    "foot/hip/shoulder orientation angles",
+    "Square-Up Score (offense)",
+    "Stance Read (defense blow-by)",
+    "anthropometrics join (wingspan, reach, hand size, vertical)",
+    "dunk reach correlation",
+    "scoring & efficiency by zone and position",
+    "schema columns and brain modules",
+    "players_anthro.csv combine join"
+  ],
+  "cross_refs": [
+    "schema.py",
+    "players_anthro.csv",
+    "square_up.py",
+    "stance.py",
+    "anthro_corr.py"
+  ],
+  "locked": false,
+  "precedence": 1,
+  "notes": ""
+}

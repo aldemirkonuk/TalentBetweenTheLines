@@ -1,0 +1,28 @@
+{
+  "source_path": "/Users/aldemirkonuk/Documents/Claude/Projects/Portfolio/Talent Between the Lines/READ_THE_FLOOR.md",
+  "type": "SPEC",
+  "confidence": "high",
+  "manifest_override": true,
+  "title": "Read the Floor — Project Spec",
+  "summary": "Technical spec for a computer-vision system that renders the value of the basketball floor, the best read, and its risk as a broadcast overlay.",
+  "scope": [
+    "computer-vision pipeline",
+    "player detection and tracking",
+    "team assignment and jersey-number reading",
+    "court homography / top-down mapping",
+    "Matchup Engine (who-guards-whom + Beaten Index)",
+    "Value Surface / EPV and Points Left on the Floor",
+    "Set Perfectionist (play recognition + execution grade)",
+    "The Tell / The Snitch (tendency mining + scouting report)",
+    "Moneyball for Vision (court-IQ scout)",
+    "Body & Angles biomechanics layer"
+  ],
+  "cross_refs": [
+    "STATE.md",
+    "BODY_AND_ANGLES.md",
+    "read_the_floor/SETUP.md"
+  ],
+  "locked": false,
+  "precedence": 0,
+  "notes": ""
+}
