@@ -38,7 +38,7 @@ Read the Floor already has a validated brain: on open SportVU 2015-16 coordinate
 **Depends on**: Phase 0
 **Requirements**: REQ-video-to-coords
 **Success Criteria** (what must be TRUE):
-  1. The Skalski Colab cell 3 is filled (RF-DETR detection + SAM2 tracking + SigLIP/UMAP/KMeans teams + SmolVLM2 jersey numbers + keypoints→homography) and runs on one real clip producing `frames_out` per frame
+  1. The Skalski Colab cell 3 is filled (RF-DETR detection + SAM2 tracking + SigLIP/UMAP/KMeans teams + keypoints→homography; SmolVLM2 jersey numbers are an optional stretch this phase — the brain tolerates empty `identity` and the headline X-ray GIF does not depend on numbers) and runs on one real clip producing `frames_out` per frame
   2. The Skalski adapter converts `frames_out` into the shared `schema.py` tracking table with no schema fork
   3. The existing brain (matchup + Beaten Index + value + render) runs on the video-derived coordinates and produces a broadcast X-ray overlay GIF
   4. The video-path numbers are sanity-checked against the SportVU baseline, with stills saved to `frames/` and the GIF to `prototypes/`

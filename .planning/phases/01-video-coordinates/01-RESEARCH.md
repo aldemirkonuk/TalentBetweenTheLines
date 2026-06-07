@@ -531,7 +531,7 @@ This is a greenfield fill-in for an existing stub — no rename/refactor. All st
 
 ---
 
-## Open Questions
+## Open Questions (RESOLVED)
 
 1. **BasketballCourtConfiguration vertex ordering** — (RESOLVED)
    - What we know: `basketball-court-detection-2` model on Roboflow Universe detects specific keypoints (corners of paint, 3-pt line, etc.) in a fixed order defined by the dataset labels
