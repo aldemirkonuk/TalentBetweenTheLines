@@ -12,16 +12,16 @@ See: .planning/PROJECT.md (updated 2026-06-06)
 ## Current Position
 
 Phase: 1 of 5 (Video → Coordinates) — Phase 0 foundation complete
-Plan: 3 of 3 planned (3 waves) — verified
-Status: Planned & verified (plan-checker PASS, 0 blockers) — ready to execute (`/gsd-execute-phase 1`)
-Last activity: 2026-06-06 — Planned Phase 1 (research → 3 plans → verify); resolved plan-checker blockers/warnings; re-verified PASS
+Plan: 2 of 3 complete (waves 1–2 executed; wave 3 GPU-gated, pending)
+Status: Waves 1–2 executed & green — phase verification deferred until wave 3 (Colab) runs
+Last activity: 2026-06-06 — Executed Phase 1 waves 1–2: BasketballCourtConfig (feet), synthetic frames_out fixture + 5-test spine (5 passed), run_video.py + validate_video.py (all SC4 PASS on fixture). 6 atomic commits.
 
-Progress: [███░░░░░░░] Phase 0 done; Phase 1 planned+verified; Phases 2–5 not started
+Progress: [████░░░░░░] Phase 0 done; Phase 1 waves 1–2 done (local spine green), wave 3 (GPU) pending; Phases 2–5 not started
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 0 (this milestone)
+- Total plans completed: 2 (this milestone)
 - Average duration: —
 - Total execution time: —
 
@@ -69,5 +69,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-06-06
-Stopped at: Phase 1 planned (01-01/02/03) and verified by gsd-plan-checker (PASS, 0 blockers). Next: `/gsd-execute-phase 1` — waves run 01 → 02 → 03; plan 03 is GPU-gated (Colab T4 + clip + ROBOFLOW_API_KEY) and autonomous:false.
+Stopped at: Phase 1 waves 1–2 executed (01-01, 01-02 complete, summaries written, all local tests green). Wave 3 (01-03) intentionally not run — it is GPU-gated (Colab T4 + real clip + ROBOFLOW_API_KEY) and autonomous:false. Next: `/gsd-execute-phase 1 --wave 3` once the clip + Colab GPU + API key are ready; phase verification/completion runs after wave 3.
 Resume file: None
