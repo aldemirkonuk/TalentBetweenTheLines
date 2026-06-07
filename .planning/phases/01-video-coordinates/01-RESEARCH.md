@@ -533,20 +533,23 @@ This is a greenfield fill-in for an existing stub — no rename/refactor. All st
 
 ## Open Questions
 
-1. **BasketballCourtConfiguration vertex ordering**
+1. **BasketballCourtConfiguration vertex ordering** — (RESOLVED)
    - What we know: `basketball-court-detection-2` model on Roboflow Universe detects specific keypoints (corners of paint, 3-pt line, etc.) in a fixed order defined by the dataset labels
    - What's unclear: Exact number of keypoints, their names, and their index ordering — cannot be read without a Roboflow account or running inference
    - Recommendation: First task in Wave 0 — run the court model on a test image in Colab, inspect `keypoints.xy[0].shape` and confidence values, map indices to court positions, then define `BASKETBALL_COURT_VERTICES_FT` to match
+   - **(RESOLVED):** Operationally handled — plan 01 defines a generous, documented superset `BASKETBALL_COURT_VERTICES_FT` + parallel `KEYPOINT_NAMES` index map; plan 03 Task 1 (Wave-0 checkpoint) confirms the live model's keypoint count/order in Colab and reorders/subselects the vertex array to match, applying the same confidence mask to source and target (Pitfall 7). No further research needed pre-execution.
 
-2. **SAM2 exact import path in Colab (pip install sam2 vs git clone)**
+2. **SAM2 exact import path in Colab (pip install sam2 vs git clone)** — (RESOLVED)
    - What we know: SAM2 is available via `pip install sam2` on PyPI; facebookresearch recommends git clone for latest features including the Dec 2024 multi-object update
    - What's unclear: Whether the PyPI package includes `build_sam2_video_predictor` or whether the git-installed version is required
    - Recommendation: Use `pip install sam2` first; if `build_sam2_video_predictor` is missing, fall back to `pip install git+https://github.com/facebookresearch/sam2.git`
+   - **(RESOLVED):** Operationally handled — plan 03 Task 2 encodes the fallback as an inline comment in cell 3 (`pip install sam2` first; git-install facebookresearch/sam2 if `build_sam2_video_predictor` is missing). A try-at-runtime decision, not a planning blocker.
 
-3. **RF-DETR fine-tuned basketball weights access**
+3. **RF-DETR fine-tuned basketball weights access** — (RESOLVED)
    - What we know: The blog describes a custom 10-class fine-tuned model; `basketball-player-detection-3-ycjdo` is on Roboflow Universe with multiple architectures including rfdetr
    - What's unclear: Whether the fine-tuned weights are publicly downloadable without a Roboflow account/API key, or whether base RF-DETR weights + Roboflow inference API is required
    - Recommendation: Use Roboflow `inference` SDK (`get_model("basketball-player-detection-3-ycjdo/...")`) as primary path; requires free Roboflow API key; add `ROBOFLOW_API_KEY` as Colab secret
+   - **(RESOLVED):** Operationally handled — plan 03 adopts the Roboflow `inference` SDK (`get_model(...)`) as the primary path with the `ROBOFLOW_API_KEY` Colab secret (user_setup + Task 1 checkpoint), and notes direct `RFDETRBase` weights as the documented fallback. Access is a Wave-0 prerequisite, not an open design question.
 
 ---
 

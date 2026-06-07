@@ -42,11 +42,11 @@ Read the Floor already has a validated brain: on open SportVU 2015-16 coordinate
   2. The Skalski adapter converts `frames_out` into the shared `schema.py` tracking table with no schema fork
   3. The existing brain (matchup + Beaten Index + value + render) runs on the video-derived coordinates and produces a broadcast X-ray overlay GIF
   4. The video-path numbers are sanity-checked against the SportVU baseline, with stills saved to `frames/` and the GIF to `prototypes/`
-**Plans**: 3 plans (2 waves)
+**Plans**: 3 plans (3 waves)
 Plans:
-- [ ] 01-01-PLAN.md — Local GPU-free spine: BasketballCourtConfig (feet) + synthetic frames_out fixture + end-to-end pytest (config→adapter→schema→brain→render)
-- [ ] 01-02-PLAN.md — Local video runner + validator: run_video.py (frames_out→X-ray GIF + stills) and validate_video.py (robustness metrics + SC4 sanity vs SportVU)
-- [ ] 01-03-PLAN.md — Colab cell 3 fill (RF-DETR + SAM2 + teams + homography) + real-clip run → prototypes/video_matchup.gif + frames/ stills (GPU-gated)
+- [ ] 01-01-PLAN.md (wave 1) — Local GPU-free spine: BasketballCourtConfig (feet) + synthetic frames_out fixture + end-to-end pytest (config→adapter→schema→brain→render)
+- [ ] 01-02-PLAN.md (wave 2, depends 01) — Local video runner + validator: run_video.py (frames_out→X-ray GIF + stills) and validate_video.py (robustness metrics + SC4 sanity vs SportVU)
+- [ ] 01-03-PLAN.md (wave 3, depends 01,02) — Colab cell 3 fill (RF-DETR + SAM2 + teams + homography) + real-clip run → prototypes/video_matchup.gif + frames/ stills (GPU-gated)
 **UI hint**: no
 
 ### Phase 2: Points Left + EPV Surface
