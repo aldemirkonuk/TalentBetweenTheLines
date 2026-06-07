@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .venv/
+.env
 *.egg-info/
 
 # OS
@@ -14,3 +15,6 @@ data/tracking/*.7z
 # Local run outputs (regenerated)
 read_the_floor/frames/*.png
 frames/*.png
+
+# Skalski reference notebooks (local only — too large for GitHub)
+Skalski_Colab/

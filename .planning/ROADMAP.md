@@ -46,7 +46,7 @@ Read the Floor already has a validated brain: on open SportVU 2015-16 coordinate
 Plans:
 - [x] 01-01-PLAN.md (wave 1) — Local GPU-free spine: BasketballCourtConfig (feet) + synthetic frames_out fixture + end-to-end pytest (config→adapter→schema→brain→render)
 - [x] 01-02-PLAN.md (wave 2, depends 01) — Local video runner + validator: run_video.py (frames_out→X-ray GIF + stills) and validate_video.py (robustness metrics + SC4 sanity vs SportVU)
-- [ ] 01-03-PLAN.md (wave 3, depends 01,02) — Colab cell 3 fill (RF-DETR + SAM2 + teams + homography) + real-clip run → prototypes/video_matchup.gif + frames/ stills (GPU-gated)
+- [~] 01-03-PLAN.md (wave 3, depends 01,02) — Colab notebook FILLED & verified (RF-DETR + SAM2 + teams + jersey OCR + 33-pt feet homography); real-clip GPU render → prototypes/video_matchup.gif + frames/ stills still PENDING (Task 3, GPU-gated)
 **UI hint**: no
 
 ### Phase 2: Points Left + EPV Surface
