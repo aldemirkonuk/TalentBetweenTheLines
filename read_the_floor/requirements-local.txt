@@ -1,0 +1,7 @@
+# CPU-only — for the local SportVU quick win (run_sportvu.py)
+numpy
+pandas
+scipy
+matplotlib
+imageio
+py7zr

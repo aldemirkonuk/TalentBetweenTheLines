@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+*.egg-info/
+
+# OS
+.DS_Store
+
+# Large tracking archives — fetch via data/tracking/MANIFEST.txt
+data/tracking/*.7z
+
+# Local run outputs (regenerated)
+read_the_floor/frames/*.png
+frames/*.png
